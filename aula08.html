@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08: Listas e Menus</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background: rgba(150,150,150);
+            height: 60px;
+        }
+
+        nav ul li a {
+            color: #00ffff;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: red;
+            padding: 20px;
+            text-transform: uppercase;
+            display: block;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a:hover {
+            background: rgba(150,150,150);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            background: lightcoral;
+            margin-left: 20px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <p>Lista Não ordenada:</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <p>Lista Ordenada:</p>
+    <ol type="A" start="25">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <p>Lista Description:</p>
+    <dl>
+        <dt>Café</dt>
+        <dd>bebida matinal quente.</dd>
+        <dt>Refri</dt>
+        <dd>bebida refrescante.</dd>
+    </dl>
+</body>
+</html>

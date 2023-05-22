@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07: CSS Box-Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .section-one {
+            background: deeppink;
+            background-image: url(https://t4.ftcdn.net/jpg/05/57/01/49/360_F_557014970_oAIL8oHB4r46MpD0TlDaOsCGFPewcO4u.jpg);
+            background-position: center center;
+            color: #fff;
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            padding: 15px;
+            margin: 20px;
+        }
+        .section-two {
+            background: cyan;
+            width: 400px;
+            height: 800px;
+            border-width: 15px;
+            border-bottom-color: green;
+            border-top-color: yellow;
+            border-left-color: red;
+            border-right-color: blue;
+            border-style: solid;
+            padding: 150px 0;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="section-one">1</heading>
+    </section>
+    <section class="section-two">
+        <heading>
+
+                <p>
+                    Cada box possui 4 edges: margin edge, border edge, padding edge e content edge.<br>
+                    Content: é onde está o conteudo da BOX. <br>
+                    Padding: é a área de preenchimneto da BOX  <br>
+                    Border: É a borda da BOX<br>
+                    Margin: estende a área de borda com um espaço vazio.<br>
+                    ATENÇÃO: A área de margin não é somada entre os elementos vizinhos. <br>
+                    No caso, a maior área prevalece. <br>
+                    Na hora de configurar espaçamento de alguma área, a ordenação deve estar sentido horário <br>
+                    Exemplo: margin:15px 10px    15px  25px<br>
+                    A ordem seria: TOPO DIREITA BAIXO ESQUERDA<br>
+                    Se houver apenas um valor, se aplica para todos os lados.
+                </p>
+
+        </heading>
+    </section>
+</body>
+</html>

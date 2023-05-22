@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+.aula-um p {
+    font-size: 20px; /* tamanho da fonte */
+    /* font-style: italic; */ /*itálico*/
+    /* font-weight: bold; */ /*negrito*/
+    /* direction: ltr; */ /*direção do texto*/
+    /* letter-spacing: 1px; */ /*espaçamento entre letras*/
+    /* word-spacing: 5px; */ /*espaçamento entre palavras*/
+    /* line-height:  25px; */ /*Altura da linha*/
+    text-align: left; /*Alinhamento do texto*/
+    /* text-decoration: underline; */
+    text-indent: 50px; /* identação do texto (parágrafo) */
+    text-shadow: 1px 1px gray; /* Sombra no texto */
+    text-transform: capitalize; /* Transforma o texto (maiusculo, minusculo, primeira letra maiusculo, etc etc*/
+    
+}
+
+.pai {
+    background-color: lightgray;
+    /* height: 300vh; */
+}
+
+.filha-um, .filha-dois {
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 0, 0, 0.479);
+    margin: 10px;
+}
+
+.filha-um {
+    /* position: absolute; */
+    /* top: 50%;
+    margin-top: -150px;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 2; */
+}
+
+.filha-dois {
+    /* position: fixed; */
+    background: greenyellow;
+    z-index: 1;
+}
+
+ul {
+    height: 100px;
+    overflow-y: auto;
+}
+
+ul li.sticky {
+    position: sticky;
+    background-color: bisque;
+    top: 0;
+}

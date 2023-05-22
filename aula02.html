@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02: Atributos de id e class</title>
+
+    <style>
+        h1 {
+            background: pink;
+        }
+
+        p {
+            background: rgb(87, 87, 161);
+        }
+
+        .redBack {
+            background: red;
+        }
+
+        .italic {
+            color: yellow;
+            font-style: bold;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="firstHeading" class="redBack leftBoard">
+        Tag h1
+    </h1>
+    <h1 id="secondHeading" class="redBack">
+        Tag h1
+    </h1>
+    <p class="italic">
+        Atributos de id e class: Servem para adicionar às tags os atributos citados. <br>
+        ID: Deve ser único, ou seja, não se repete em nenhuma outra tag. <br>
+        Também deve se evitar atribuir estilos à ele, pois estes não são sobrescritos. <br>
+        A ordem em que os estilos (styles) forem aplicados é importante. <br>
+        <br>
+        Class: Podem se repetir em várias tags. Preferencialmente devem receber estilos, <br>
+        já que podem ser sobrescritos e repetidos, sendo necessário menos repetições de <br>
+        comandos para configurar seus estilos.<br>
+    </p>
+</body>
+</html>

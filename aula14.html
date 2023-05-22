@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuração de tamanhos</title>
+    <link rel="stylesheet" href="./aula14.css">
+</head>
+<body>
+    <p style="font-size: 3rem; background: lightgrey;">
+        <a href="#one">ID: ONE  |</a>
+        <a href="#two">  ID: TWO  |</a>
+        <a href="#three">  ID THREE</a> 
+    </p>
+    <div class="pai color-one" id="one">
+        <p>
+            Basicamente, ao configurar na raiz (HTML) do arquivo CSS a font-size em 62.5%, 
+            transformamos o tamanho da fonte em 10px (já que, por padrão, ela é 16px, e 62.5% de 16 é 10). <br>
+            Assim, ao se utilizar da unidade de medida 'rem', que se utiliza da unidade da raiz (root) do arquivo (HTML), 
+            Fica mais fácil de calcular, pois " 1 rem = 10px "...
+        </p>
+    </div>
+
+    <div class="pai color-two" id="two">
+        <div>
+        <p>
+            Já a unidade vw (width), corresponde a 1% do tamanho da viewport. Ou seja, 5vw = 5% do tamanho da viewport
+        </p>
+        </div>
+    </div>
+
+    <div class="pai color-three" id="three">
+        <p>
+            Já a unidade vh
+        </p>
+    </div>
+</body>
+</html>

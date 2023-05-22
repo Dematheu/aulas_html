@@ -1,0 +1,180 @@
+
+/* 
+ESPECIFICIDADE CSS (ORDEM DE APLICAÇÃO)
+Divididos em 3 números, o que prevalece será sempre o de maior valor, seugindo a ordem abaixo:
+ID > Class, Atributos e Pseudo-classes > Elementos e Pseudo-elementos
+Se duas regras tiverem o mesmo valor de especificidade, aplica-se a que vem por último.
+Apesar de qualquer valor de especificidade, claso uma tag 'style' for aplicada diretamente no HTML, ela sobrescreve tudo. 
+
+Caso se uutilizar   !important   , esta forçará o navegador a aplicá-la acima de tudo, independente da especificidade.
+Uma  !important   só pode ser sobrescrita por outra   !important   , usando especificidade como regra de desempate 
+(ou ordem se as especificidades estiverem empatadas também).
+
+Resumindo a regra de aplicação:
+1º !important
+2º style
+3º empate
+4º especificidade
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*1 0 0*/
+#p {
+    background: red;
+}
+
+/*0 1 0 */
+.p {
+    background: yellow !important;
+}
+
+/*1 1 0 */ 
+#p.p {
+    background: yellow;
+}
+
+/*1 1 1 */ 
+p#p.p {
+    background: green;
+}
+
+/*2 2 2 */ 
+
+body#b.bclass p#p.p {
+    background: gray;
+    color: white;
+}
+
+
+
+
+/* ::placeholder {
+    color: red;
+} */
+
+/* ul li::after {
+    content: ' - ';
+    background-color: aqua;
+} */
+
+/* p::first-letter {
+    font-size: 50px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+P::first-line {
+    background-color: aquamarine;
+}
+
+p::selection {
+    background: black;
+    color: white;
+}
+ */
+
+
+/* ul li:nth-child(odd) {
+    background-color: turquoise;
+}
+ul li:nth-child(even) {
+    background-color: darkgoldenrod;
+}
+ul li:nth-child(4n) {
+    color: white;
+} */
+
+
+/* 
+p:not(.meio) {
+    color: blue;
+}
+
+input:not(:checked) + p {
+    background: red;
+}
+ */
+
+/* .heading {
+    transition: all 300ms ease-in-out;
+}
+.heading:hover {
+    background: red;
+}
+
+a {
+    color: darkorange
+}
+
+a:link {
+    color: deeppink
+}
+
+a:visited {
+    color: firebrick
+}
+
+a:hover {
+    background: darkblue;
+    color: white;
+    text-decoration: none;
+}
+
+input:checked + p {
+    color: red;
+}
+
+.pai .lista li:first-child {
+    background: red;
+} */
+
+/* 
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:enabled {
+    background-color: red;
+    cursor: not-allowed;
+} */
+/* .pai .one~.two {
+    color: red;
+}
+ */
+
+
+/* body div section p,
+body div section h1 {
+    color: darkgoldenrod;
+} */
+
+/* .heading {
+    color: blueviolet;
+}
+
+div {
+    color: initial;
+    margin-left: 10px;
+}
+
+.main-content h3.heading {
+    font-style: italic;
+    color: brown;
+}
+
+.pai > .filha > .filha{
+    color: red;
+}
+
+.pai > .filha {
+    color: green;
+}
+ */
